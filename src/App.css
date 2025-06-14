@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap");
+
+@theme {
+  --font-orbitron: "Orbitron", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-space-grotesk: "Space Grotesk", sans-serif;
+}
+@import "tailwindcss";
+
+.section {
+  position: relative;
+  padding: 200px 10px;
+}
+
+.transition-between-sections {
+  height: 10px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: inset 0 -10px 10px -10px rgba(30, 30, 60, 1);
+  background: linear-gradient(
+    to bottom,
+    rgba(30, 30, 60, 1),
+    rgba(30, 30, 60, 0)
+  );
+}
+
+.img-pixel-perfect {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+.transition-div {
+  height: 20px;
+  background: linear-gradient(to bottom, #16124b, #05032a);
+}
