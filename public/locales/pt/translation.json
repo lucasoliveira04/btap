@@ -1,0 +1,33 @@
+{
+  "navigation": {
+    "home": "Início",
+    "about": "Sobre",
+    "contact": "Contato",
+    "exploreGames": "Explorar nossos jogos"
+  },
+  "about": {
+    "title": "Sobre a BTap Studio",
+    "paragraph1": "A BTap Studio nasceu da amizade e da visão compartilhada de dois amigos desenvolvedores de jogos que se conheceram trabalhando em um projeto terceirizado em 2022. Desde o início, percebemos que tínhamos uma sinergia única e uma paixão em comum por criar algo que realmente fizesse a diferença. Essa conexão nos levou a dar o próximo passo e, em janeiro de 2024, fundamos a BTap com um propósito claro: transformar a experiência dos jogos móveis, tornando-a inclusiva, acessível e cheia de alegria.",
+    "paragraph2": "Somos uma empresa dedicada ao desenvolvimento de jogos eletrônicos e realidades virtuais, movida pela missão de fazer dos jogos mobile um espaço onde todos independentemente de suas habilidades, limitações ou origens — possam encontrar diversão, alegria e um senso de pertencimento.",
+    "valuesTitle": "Nossos Valores",
+    "valueInclusivity": "Em cada jogo que criamos, a INCLUSIVIDADE está no centro de tudo o que fazemos. Acreditamos que todos merecem se sentir bem-vindos e representados.",
+    "valueEmpathy": "A EMPATIA é um dos nossos valores fundamentais. Nos esforçamos para entender profundamente nossos usuários, ouvindo suas histórias e adaptando nossos jogos para refletir suas preferências e necessidades únicas.",
+    "valueInnovation": "A INOVAÇÃO nos impulsiona, à medida que exploramos continuamente novas tecnologias e métodos para tornar nossos jogos mais envolventes.",
+    "valueTransparency": "Mantemos uma postura de TRANSPARÊNCIA em todas as nossas interações, mantendo um diálogo aberto com nossa comunidade.",
+    "valueResponsibility": "E praticamos a RESPONSABILIDADE, criando ambientes seguros, respeitosos e acolhedores.",
+    "paragraph3": "Na BTap, acreditamos que os jogos têm o poder de unir as pessoas, e estamos dedicados a transformar essa visão em realidade. Junte-se a nós nessa jornada e descubra uma nova maneira de se divertir!"
+  },
+  "hero": {
+    "subtitle": "Diversão para todos os públicos",
+    "lines": [
+      "Bem-vindo à BTap",
+      "onde quebramos barreiras para transformar",
+      "o entretenimento móvel em um espaço",
+      "acolhedor e divertido para todos."
+    ],
+    "buttons": {
+      "order": "Faça um pedido aqui",
+      "seeGames": "Veja Nossos Jogos"
+    }
+  }
+}

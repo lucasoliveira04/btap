@@ -1,0 +1,33 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "exploreGames": "Explore our games"
+  },
+  "about": {
+    "title": "About BTap Studio",
+    "paragraph1": "BTap Studio was born from the friendship and shared vision of two game developers who met while working on an outsourced project in 2022. From the start, we realized we had a unique synergy and a shared passion for creating something that truly makes a difference. This connection led us to take the next step and, in January 2024, we founded BTap with a clear purpose: to transform the mobile gaming experience, making it inclusive, accessible, and full of joy.",
+    "paragraph2": "We are a company dedicated to developing electronic games and virtual realities, driven by the mission of making mobile games a space where everyone — regardless of their abilities, limitations, or backgrounds — can find fun, joy, and a sense of belonging.",
+    "valuesTitle": "Our Values",
+    "valueInclusivity": "In every game we create, INCLUSIVITY is at the heart of everything we do. We believe everyone deserves to feel welcome and represented.",
+    "valueEmpathy": "EMPATHY is one of our core values. We strive to deeply understand our users, listening to their stories and adapting our games to reflect their unique preferences and needs.",
+    "valueInnovation": "INNOVATION drives us as we continuously explore new technologies and methods to make our games more engaging.",
+    "valueTransparency": "We maintain a stance of TRANSPARENCY in all our interactions, keeping an open dialogue with our community.",
+    "valueResponsibility": "And we practice RESPONSIBILITY, creating safe, respectful, and welcoming environments.",
+    "paragraph3": "At BTap, we believe games have the power to bring people together, and we are dedicated to making this vision a reality. Join us on this journey and discover a new way to have fun!"
+  },
+  "hero": {
+    "subtitle": "Fun for all audiences",
+    "lines": [
+      "Welcome to BTap",
+      "where we break barriers to transform",
+      "mobile entertainment into a space",
+      "that is welcoming and fun for everyone."
+    ],
+    "buttons": {
+      "order": "Place an order here",
+      "seeGames": "See Our Games"
+    }
+  }
+}
