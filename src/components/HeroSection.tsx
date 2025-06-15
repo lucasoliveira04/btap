@@ -12,7 +12,7 @@ export function HeroSection() {
     return () => clearTimeout(timer);
   }, []);
 
-  const lines = t("hero.lines", { returnObjects: true });
+  const lines = (t("hero.lines", { returnObjects: true }) as string[]) || [];
 
   return (
     <div className="relative overflow-hidden h-screen">
@@ -36,7 +36,7 @@ export function HeroSection() {
         </p>
 
         <div className="space-y-2">
-          {lines.map((line, index) => (
+          {lines.map((line: any, index: any) => (
             <h1
               key={index}
               className={`text-white
