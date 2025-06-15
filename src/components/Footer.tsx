@@ -25,7 +25,7 @@ export function Footer() {
   ];
 
   return (
-    <footer className="relative text-white">
+    <footer className="relative text-white" id="contact">
       <div className="relative w-full overflow-hidden">
         <img
           src={fundo}
