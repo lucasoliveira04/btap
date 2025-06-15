@@ -177,33 +177,52 @@ export function About() {
 
         <div className="mt-20 flex flex-row flex-wrap justify-center items-center gap-8 sm:gap-16">
           {/* CEO */}
-          <div className="flex flex-col items-center max-w-xs text-center">
-            <img
-              src={ceoPhoto}
-              alt="CEO"
-              className="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover mb-4 border-4 border-yellow-400"
-              draggable="false"
-            />
-            <h3 className="text-xl font-semibold font-poppins text-yellow-400">
-              Thiago de Castro
-            </h3>
-            <p className="text-lg font-poppins">CEO</p>
+          <div className="flex flex-col items-center max-w-xs text-center gap-5">
+            <a
+              href="https://www.linkedin.com/in/thiagojurados/"
+              className="hover:scale-105 transition-transform duration-300"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                src={ceoPhoto}
+                alt="CEO"
+                className="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover border-4 border-yellow-400"
+                draggable="false"
+              />
+            </a>
+            <div>
+              <h3 className="text-xl font-semibold font-poppins text-yellow-400">
+                Thiago de Castro
+              </h3>
+              <p className="text-lg font-poppins">CEO</p>
+            </div>
           </div>
 
           <div className="hidden md:block w-px h-40 bg-yellow-400"></div>
 
           {/* CTO */}
-          <div className="flex flex-col items-center max-w-xs text-center">
-            <img
-              src={ctoPhoto}
-              alt="CTO"
-              className="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover mb-4 border-4 border-yellow-400"
-              draggable="false"
-            />
-            <h3 className="text-xl font-semibold font-poppins text-yellow-400">
-              Luis Eduardo Pedro
-            </h3>
-            <p className="text-lg font-poppins">CTO</p>
+          <div className="flex flex-col items-center max-w-xs text-center gap-5">
+            <a
+              href="https://www.linkedin.com/in/ryushuke/"
+              className="hover:scale-105 transition-transform duration-300"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                src={ctoPhoto}
+                alt="CTO"
+                className="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover border-4 border-yellow-400"
+                draggable="false"
+              />
+            </a>
+
+            <div>
+              <h3 className="text-xl font-semibold font-poppins text-yellow-400">
+                Luis Eduardo Pedro
+              </h3>
+              <p className="text-lg font-poppins">CTO</p>
+            </div>
           </div>
         </div>
       </div>

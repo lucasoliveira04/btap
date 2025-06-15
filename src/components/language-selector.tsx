@@ -2,17 +2,11 @@ import { useState } from "react";
 import brFlag from "../../public/img/countrys/brazil-flag.png";
 import usFlag from "../../public/img/countrys/eua-flag.png";
 import spanishFlag from "../../public/img/countrys/spanish-flag.png";
-import i18n from "../i18n";
 import { useTranslation } from "react-i18next";
+import i18n from "../i18n";
 
 export function LanguageSelector() {
   const { t } = useTranslation();
-  const [open, setOpen] = useState(false);
-  const [selected, setSelected] = useState({
-    code: "pt",
-    label: "Português",
-    flag: brFlag,
-  });
 
   const languages = [
     {
@@ -32,14 +26,24 @@ export function LanguageSelector() {
     },
   ];
 
+  const getInitialSelected = () => {
+    const currentLang = i18n.language.split("-")[0];
+    return (
+      languages.find((lang) => lang.code === currentLang) || languages[0] 
+    );
+  };
+
+  const [selected, setSelected] = useState(getInitialSelected);
+  const [open, setOpen] = useState(false);
+
   const changeLanguage = (lng: string) => {
-    setSelected(languages.find((l) => l.code === lng) || selected);
+    const selectedLang = languages.find((l) => l.code === lng);
+    if (selectedLang) setSelected(selectedLang);
     i18n.changeLanguage(lng);
   };
 
   return (
     <div className="relative w-40 text-white font-[Space Grotesk]">
-      {/* Botão atual */}
       <button
         onClick={() => setOpen(!open)}
         className="
@@ -55,7 +59,6 @@ export function LanguageSelector() {
         <span className="text-sm">{selected.label}</span>
       </button>
 
-      {/* Dropdown */}
       {open && (
         <div
           className="
@@ -86,6 +89,7 @@ export function LanguageSelector() {
         </div>
       )}
 
+      {/* Animação */}
       <style>
         {`
           @keyframes fadeSlide {

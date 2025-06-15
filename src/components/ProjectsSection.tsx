@@ -3,9 +3,11 @@ import jogoDoPato from "../../public/img/pigelife/pigelife.jpg";
 import itatiba from "../../public/img/itatiba/itatiba.jpg";
 import retrobg from "../../public/img/backgrounds/retrobg.png";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export function ProjectsSection() {
   const [isMobile, setIsMobile] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleResize = () => {
@@ -23,7 +25,7 @@ export function ProjectsSection() {
       title: "Jogo do Pato",
       image: jogoDoPato,
       description: "Um jogo casual de reflexos rápidos.",
-      url: "/jogo-do-pato",
+      url: "/pigelife",
     },
     {
       title: "Itatiba",
@@ -62,7 +64,7 @@ export function ProjectsSection() {
       id="projects"
     >
       <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8">
-        Conheça os Jogos em que estamos trabalhando
+        {t("projects.title")}
       </h2>
 
       <div className="flex flex-col items-center justify-center relative z-10 w-full">

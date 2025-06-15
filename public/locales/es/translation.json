@@ -34,5 +34,36 @@
     "brazil": "Português",
     "english": "Inglés",
     "spanish": "Español"
+  },
+  "pigelife": {
+    "logoAlt": "Kelly",
+    "logoAltRight": "Tannery",
+    "statusTitle": "[EN DESARROLLO]",
+    "statusSubtitle": "[Lanzamiento previsto: Q2/2025]",
+    "tags": "Android - Casual - Acción - Un jugador",
+    "description": "<strong>PigeLife</strong> es un juego casual donde el jugador controla una paloma (<span class='text-orange-400 font-semibold'>Souza</span>, <span class='text-orange-400 font-semibold'>Kelly</span> o <span class='text-orange-400 font-semibold'>Tannery</span>) en un viaje infinito a través de la ciudad de São Paulo. El objetivo es esquivar obstáculos, recoger objetos especiales y batir récords de distancia. Cada personaje tiene habilidades únicas que influyen en la jugabilidad.",
+    "downloadSoon": "Descarga próximamente"
+  },
+  "contactForm": {
+    "entreContato": "Contáctanos",
+    "nameLabel": "Nombre",
+    "namePlaceholder": "Ingresa tu nombre",
+    "reasonLabel": "Motivo",
+    "reasonOptions": {
+      "default": "Selecciona un motivo",
+      "doubt": "Duda",
+      "feedback": "Retroalimentación",
+      "quote": "Cotización",
+      "other": "Otro"
+    },
+    "messageLabel": "Mensaje",
+    "messagePlaceholder": "Escribe tu mensaje...",
+    "submitButton": "Enviar"
+  },
+  "projects": {
+    "title": "Conoce los Juegos en los que estamos trabajando",
+    "emDesenvolvimento": "En desarrollo",
+    "emBreve": "Próximamente",
+    "subTitleDesenvolvimento": "Estamos trabajando duro para traer nuevos juegos increíbles para ti."
   }
 }

@@ -1,19 +1,40 @@
 import { useState } from "react";
-import logo from "../../public/img/logobtap.png";
+import { useNavigate, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import logo from "../../public/img/logobtap.png";
 import { MdMenu, MdClose } from "react-icons/md";
-
 import { LanguageSelector } from "./language-selector";
 
 export function Header() {
   const { t } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const headerOps = [
-    { label: t("navigation.home"), href: "#home" },
-    { label: t("navigation.about"), href: "#about" },
-    { label: t("navigation.contact"), href: "#contact" },
+    { label: t("navigation.home"), targetId: "home" },
+    { label: t("navigation.about"), targetId: "about" },
+    { label: t("navigation.contact"), targetId: "contact" },
   ];
+
+  function scrollToElementById(id: string) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
+  function handleNavigation(id: string) {
+    setIsMenuOpen(false);
+    if (location.pathname !== "/") {
+      navigate("/", { replace: false });
+
+      // Espera um pouco para garantir que a home renderizou
+      setTimeout(() => scrollToElementById(id), 100);
+    } else {
+      scrollToElementById(id);
+    }
+  }
 
   return (
     <header
@@ -53,15 +74,14 @@ export function Header() {
           <ul className="flex flex-col md:flex-row md:gap-8 gap-4">
             {headerOps.map((op) => (
               <li key={op.label}>
-                <a
-                  href={op.href}
+                <button
+                  onClick={() => handleNavigation(op.targetId)}
                   className="
-                    text-white text-lg hover:text-orange-400 transition duration-200 font-[Space Grotesk] tracking-wide
+                    text-white text-lg hover:text-orange-400 transition duration-200 font-[Space Grotesk] tracking-wide cursor-pointer
                   "
-                  onClick={() => setIsMenuOpen(false)}
                 >
                   {op.label}
-                </a>
+                </button>
               </li>
             ))}
           </ul>

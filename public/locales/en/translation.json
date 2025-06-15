@@ -34,5 +34,36 @@
     "brazil": "Portuguese",
     "english": "English",
     "spanish": "Spanish"
+  },
+  "pigelife": {
+    "logoAlt": "Kelly",
+    "logoAltRight": "Tannery",
+    "statusTitle": "[IN DEVELOPMENT]",
+    "statusSubtitle": "[Expected release: Q2/2025]",
+    "tags": "Android - Casual - Action - Singleplayer",
+    "description": "<strong>PigeLife</strong> is a casual game where the player controls a pigeon (<span class='text-orange-400 font-semibold'>Souza</span>, <span class='text-orange-400 font-semibold'>Kelly</span>, or <span class='text-orange-400 font-semibold'>Tannery</span>) on an endless journey through the city of São Paulo. The goal is to dodge obstacles, collect special items, and beat distance records. Each character has unique abilities that influence gameplay.",
+    "downloadSoon": "Download coming soon"
+  },
+  "contactForm": {
+    "entreContato": "Get in touch with us",
+    "nameLabel": "Name",
+    "namePlaceholder": "Enter your name",
+    "reasonLabel": "Reason",
+    "reasonOptions": {
+      "default": "Select a reason",
+      "doubt": "Doubt",
+      "feedback": "Feedback",
+      "quote": "Quote",
+      "other": "Other"
+    },
+    "messageLabel": "Message",
+    "messagePlaceholder": "Write your message...",
+    "submitButton": "Send"
+  },
+  "projects": {
+    "title": "Discover the Games We're Working On",
+    "emDesenvolvimento": "In development",
+    "emBreve": "Coming soon",
+    "subTitleDesenvolvimento": "We're working hard to bring you amazing new games!"
   }
 }
