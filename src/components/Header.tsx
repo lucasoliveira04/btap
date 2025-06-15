@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../assets/logobtap.png";
+import logo from "../../public/img/logobtap.png";
 import { useTranslation } from "react-i18next";
 import { MdMenu, MdClose } from "react-icons/md";
 

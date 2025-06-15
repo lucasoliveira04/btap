@@ -1,7 +1,7 @@
 import { useState } from "react";
-import brFlag from "../assets/countrys/brazil-flag.png";
-import usFlag from "../assets/countrys/eua-flag.png";
-import spanishFlag from "../assets/countrys/spanish-flag.png";
+import brFlag from "../../public/img/countrys/brazil-flag.png";
+import usFlag from "../../public/img/countrys/eua-flag.png";
+import spanishFlag from "../../public/img/countrys/spanish-flag.png";
 import i18n from "../i18n";
 
 export function LanguageSelector() {

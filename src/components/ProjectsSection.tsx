@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
-import jogoDoPato from "../assets/pigelife/jogo do pato.jpg";
-import pigelife from "../assets/pigelife/jogo do pato.jpg";
-import itatiba from "../assets/itatiba/itatiba.jpg";
-import retrobg from "../assets/backgrounds/retrobg.png";
+import jogoDoPato from "../../public/img/pigelife/pigelife.jpg";
+import itatiba from "../../public/img/itatiba/itatiba.jpg";
+import retrobg from "../../public/img/backgrounds/retrobg.png";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export function ProjectsSection() {

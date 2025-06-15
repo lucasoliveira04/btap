@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import fundo from "../assets/backgrounds/polygon-scatter-haikei.svg";
+import fundo from "../../public/img/backgrounds/polygon-scatter-haikei.svg";
 import { ParticlesBackground } from "./ParticlesBackground";
 import { useEffect, useState } from "react";
 

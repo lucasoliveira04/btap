@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
-import aboutBody from "../assets/backgrounds/layered-waves-haikei.png";
-import ceoPhoto from "../assets/team/ceo.png";
-import ctoPhoto from "../assets/team/cto.png";
+import aboutBody from "../../public/img/backgrounds/layered-waves-haikei.png";
+import ceoPhoto from "../../public/img/team/ceo.png";
+import ctoPhoto from "../../public/img/team/cto.png";
 
 const highlightedWords = [
   // PT
@@ -175,7 +175,6 @@ export function About() {
           </div>
         </div>
 
-        {/* Seção dos Líderes */}
         <div className="mt-20 flex flex-col md:flex-row justify-center items-center gap-16">
           {/* CEO */}
           <div className="flex flex-col items-center max-w-xs text-center">
@@ -191,10 +190,8 @@ export function About() {
             <p className="text-lg font-poppins">CEO</p>
           </div>
 
-          {/* Linha vertical */}
           <div className="hidden md:block w-px h-40 bg-yellow-400"></div>
 
-          {/* CTO */}
           <div className="flex flex-col items-center max-w-xs text-center">
             <img
               src={ctoPhoto}
