@@ -60,15 +60,18 @@ export function HeroSection() {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 mt-8 w-full max-w-md mx-auto">
-          <button
-            className="relative w-full sm:w-auto inline-block px-8 py-3 font-bold text-orange-500 border-2 border-orange-500 overflow-hidden rounded
+          <a href="#contact">
+            <button
+              className="relative w-full sm:w-auto inline-block px-8 py-3 font-bold text-orange-500 border-2 border-orange-500 overflow-hidden rounded
             hover:text-white transition cursor-pointer hover:bg-orange-500 hover:border-transparent"
-          >
-            <span className="absolute inset-0 bg-orange-500 scale-x-0 origin-left transition-transform duration-300 ease-out hover:scale-x-100"></span>
-            <span className="relative z-10 text-[14px]">
-              {t("hero.buttons.order")}
-            </span>
-          </button>
+            >
+              <span className="absolute inset-0 bg-orange-500 scale-x-0 origin-left transition-transform duration-300 ease-out hover:scale-x-100"></span>
+              <span className="relative z-10 text-[14px]">
+                {t("hero.buttons.order")}
+              </span>
+            </button>
+          </a>
+
           <a href="#projects">
             <button
               className="relative w-full sm:w-auto inline-block px-8 py-3 font-bold bg-orange-500 text-white border-2 border-orange-500 overflow-hidden rounded
