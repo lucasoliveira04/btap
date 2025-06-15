@@ -11,6 +11,10 @@
 }
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 .section {
   position: relative;
   padding: 200px 10px;

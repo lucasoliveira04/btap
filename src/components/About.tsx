@@ -83,13 +83,13 @@ export function About() {
     <div
       className="relative bg-cover bg-center text-white"
       style={{ backgroundImage: `url(${aboutBody})` }}
+      id="about"
     >
       <div className="relative z-10 px-6 md:px-16 py-20 max-w-5xl mx-auto space-y-16">
         <h1 className="text-4xl font-poppins text-center text-yellow-400">
           {t("about.title")}
         </h1>
 
-        {/* Grid de parágrafos */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 font-bold">
           {/* Parágrafo 1 */}
           <p
@@ -175,13 +175,13 @@ export function About() {
           </div>
         </div>
 
-        <div className="mt-20 flex flex-col md:flex-row justify-center items-center gap-16">
+        <div className="mt-20 flex flex-row flex-wrap justify-center items-center gap-8 sm:gap-16">
           {/* CEO */}
           <div className="flex flex-col items-center max-w-xs text-center">
             <img
               src={ceoPhoto}
               alt="CEO"
-              className="w-40 h-40 rounded-full object-cover mb-4 border-4 border-yellow-400"
+              className="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover mb-4 border-4 border-yellow-400"
               draggable="false"
             />
             <h3 className="text-xl font-semibold font-poppins text-yellow-400">
@@ -192,11 +192,12 @@ export function About() {
 
           <div className="hidden md:block w-px h-40 bg-yellow-400"></div>
 
+          {/* CTO */}
           <div className="flex flex-col items-center max-w-xs text-center">
             <img
               src={ctoPhoto}
               alt="CTO"
-              className="w-40 h-40 rounded-full object-cover mb-4 border-4 border-yellow-400"
+              className="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover mb-4 border-4 border-yellow-400"
               draggable="false"
             />
             <h3 className="text-xl font-semibold font-poppins text-yellow-400">

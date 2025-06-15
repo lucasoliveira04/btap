@@ -15,7 +15,7 @@ export function HeroSection() {
   const lines = (t("hero.lines", { returnObjects: true }) as string[]) || [];
 
   return (
-    <div className="relative overflow-hidden h-screen">
+    <div className="relative overflow-hidden h-screen" id="home">
       <ParticlesBackground />
 
       <div className="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-purple-600/20 animate-gradientMove -z-10" />
@@ -69,13 +69,17 @@ export function HeroSection() {
               {t("hero.buttons.order")}
             </span>
           </button>
-          <button
-            className="relative w-full sm:w-auto inline-block px-8 py-3 font-bold bg-orange-500 text-white border-2 border-orange-500 overflow-hidden rounded
+          <a href="#projects">
+            <button
+              className="relative w-full sm:w-auto inline-block px-8 py-3 font-bold bg-orange-500 text-white border-2 border-orange-500 overflow-hidden rounded
             transition cursor-pointer hover:text-orange-500 hover:bg-transparent hover:border-orange-500"
-          >
-            <span className="absolute inset-0 bg-orange-500 scale-x-0 origin-left transition-transform duration-300 ease-out hover:scale-x-100"></span>
-            <span className="relative z-10">{t("hero.buttons.seeGames")}</span>
-          </button>
+            >
+              <span className="absolute inset-0 bg-orange-500 scale-x-0 origin-left transition-transform duration-300 ease-out hover:scale-x-100"></span>
+              <span className="relative z-10">
+                {t("hero.buttons.seeGames")}
+              </span>
+            </button>
+          </a>
         </div>
       </div>
 

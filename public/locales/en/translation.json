@@ -29,5 +29,10 @@
       "order": "Place an order here",
       "seeGames": "See Our Games"
     }
+  },
+  "changeSelectedLanguage": {
+    "brazil": "Portuguese",
+    "english": "English",
+    "spanish": "Spanish"
   }
 }

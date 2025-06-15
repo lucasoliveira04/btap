@@ -10,9 +10,9 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const headerOps = [
-    { label: t("navigation.home"), href: "/" },
-    { label: t("navigation.about"), href: "/" },
-    { label: t("navigation.contact"), href: "/" },
+    { label: t("navigation.home"), href: "#home" },
+    { label: t("navigation.about"), href: "#about" },
+    { label: t("navigation.contact"), href: "#contact" },
   ];
 
   return (

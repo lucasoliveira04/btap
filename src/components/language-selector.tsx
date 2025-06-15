@@ -3,8 +3,10 @@ import brFlag from "../../public/img/countrys/brazil-flag.png";
 import usFlag from "../../public/img/countrys/eua-flag.png";
 import spanishFlag from "../../public/img/countrys/spanish-flag.png";
 import i18n from "../i18n";
+import { useTranslation } from "react-i18next";
 
 export function LanguageSelector() {
+  const { t } = useTranslation();
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState({
     code: "pt",
@@ -13,9 +15,21 @@ export function LanguageSelector() {
   });
 
   const languages = [
-    { code: "pt", label: "Português", flag: brFlag },
-    { code: "en", label: "English", flag: usFlag },
-    { code: "es", label: "Español", flag: spanishFlag },
+    {
+      code: "pt",
+      label: t("changeSelectedLanguage.brazil"),
+      flag: brFlag,
+    },
+    {
+      code: "en",
+      label: t("changeSelectedLanguage.english"),
+      flag: usFlag,
+    },
+    {
+      code: "es",
+      label: t("changeSelectedLanguage.spanish"),
+      flag: spanishFlag,
+    },
   ];
 
   const changeLanguage = (lng: string) => {

@@ -20,7 +20,7 @@ export function ParticlesBackground() {
         },
         particles: {
           color: {
-            value: "#FFA500", 
+            value: "#FFA500",
           },
           links: {
             color: "#FFA500",
@@ -33,7 +33,28 @@ export function ParticlesBackground() {
             enable: true,
             speed: 2,
           },
+          size: {
+            value: 3,
+          },
+          number: {
+            value: 60,
+          },
         },
+        responsive: [
+          {
+            maxWidth: 768,
+            options: {
+              particles: {
+                size: {
+                  value: 1.5,
+                },
+                number: {
+                  value: 30,
+                },
+              },
+            },
+          },
+        ],
       }}
       className="absolute inset-0 -z-20"
     />
